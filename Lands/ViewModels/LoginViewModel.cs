@@ -86,7 +86,7 @@
 			this.IsRunning = true;
 			this.IsEnabled = false;
 
-
+            //Alterando no mac e vewndo no windos
 			if (this.Email != "gualter@hotmail.com" || this.Password != "1234")
             {
 				this.IsRunning = false;
