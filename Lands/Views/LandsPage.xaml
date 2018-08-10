@@ -1,9 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:ffimageloading="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
+             xmlns:fftransformations="clr-namespace:FFImageLoading.Transformations;assembly=FFImageLoading.Transformations"
+             xmlns:ffimageloadingsvg="clr-namespace:FFImageLoading.Svg.Forms;assembly=FFImageLoading.Svg.Forms"
              x:Class="Lands.Views.LandsPage"
              BindingContext="{Binding Main, Source={StaticResource Locator}}"
              Title="Terras">
+            <ContentPage.Resources>
+                <ResourceDictionary>
+                    <ffimageloadingsvg:SvgImageSourceConverter 
+                                x:Key="SvgImageSourceConverter"/>
+                </ResourceDictionary>
+            </ContentPage.Resources>
     <ContentPage.Content>
         <StackLayout
             BindingContext="{Binding Lands}">
@@ -30,12 +39,18 @@
                                 </Frame.GestureRecognizers>
                                 <Grid>
                                     <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="Auto"/>
                                         <ColumnDefinition Width="*"/>
                                         <ColumnDefinition Width="Auto"/>
                                     </Grid.ColumnDefinitions>
-                                   
+                                    <ffimageloading:CachedImage
+                                    Grid.Column="0"
+                                    HeightRequest="30"
+                                    Source="{Binding Land.Flag, Converter={StaticResource SvgImageSourceConverter}}"
+                                    WidthRequest="60">
+                                    </ffimageloading:CachedImage>
                                     <StackLayout 
-                                        Grid.Column="0"
+                                        Grid.Column="1"
                                         VerticalOptions="Center">
                                         <Label 
                                             FontAttributes="Bold"
@@ -49,7 +64,7 @@
                                         </Label>
                                     </StackLayout>
                                     <Image 
-                                        Grid.Column="1"
+                                        Grid.Column="2"
                                         HorizontalOptions="End" 
                                         Source="ic_launcher_right">
                                     </Image>
