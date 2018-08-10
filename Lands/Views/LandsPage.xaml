@@ -46,7 +46,7 @@
                                     <ffimageloading:CachedImage
                                     Grid.Column="0"
                                     HeightRequest="30"
-                                    Source="{Binding Land.Flag, Converter={StaticResource SvgImageSourceConverter}}"
+                                    Source="{Binding Flag, Converter={StaticResource SvgImageSourceConverter}}"
                                     WidthRequest="60">
                                     </ffimageloading:CachedImage>
                                     <StackLayout 
