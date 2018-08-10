@@ -77,7 +77,7 @@
 			if(string.IsNullOrEmpty(this.Email))
 			{
 				await Application.Current.MainPage.DisplayAlert(
-					"Erro",
+					"Error",
 					"Insira seu e-mail",
 					"Aceitar");
 				return;
@@ -85,7 +85,7 @@
 			if (string.IsNullOrEmpty(this.Password))
             {
                 await Application.Current.MainPage.DisplayAlert(
-                    "Erro",
+                    "Error",
                     "Insira sua senha",
                     "Aceitar");
                 return;
@@ -102,7 +102,7 @@
                 this.IsEnabled = false;
                 
                 await Application.Current.MainPage.DisplayAlert(
-                    "Erro",
+                    "Error",
 					connection.Message,
                     "Aceitar");
                 return;
