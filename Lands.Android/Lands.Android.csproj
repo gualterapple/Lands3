@@ -70,6 +70,9 @@
     <Reference Include="Lands">
       <HintPath>..\Lands\bin\Debug\netstandard2.0\Lands.dll</HintPath>
     </Reference>
+    <Reference Include="Lands">
+      <HintPath>..\Lands\bin\Debug\netstandard2.0\Lands.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.Net.Compilers">

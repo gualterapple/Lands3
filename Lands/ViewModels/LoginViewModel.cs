@@ -78,16 +78,16 @@
 			{
 				await Application.Current.MainPage.DisplayAlert(
 					"Error",
-					"Insira seu e-mail",
-					"Aceitar");
+					"Insert an email",
+					"Accept");
 				return;
             }
 			if (string.IsNullOrEmpty(this.Password))
             {
                 await Application.Current.MainPage.DisplayAlert(
                     "Error",
-                    "Insira sua senha",
-                    "Aceitar");
+                    "Insert your password",
+                    "Accept");
                 return;
             }
 
@@ -104,7 +104,7 @@
                 await Application.Current.MainPage.DisplayAlert(
                     "Error",
 					connection.Message,
-                    "Aceitar");
+					"Accept");
                 return;
             }
 
@@ -119,9 +119,9 @@
                 this.IsEnabled = true;
 
                 await Application.Current.MainPage.DisplayAlert(
-                    "Erro",
+                    "Error",
                     "Something was wrong, please try later.",
-                    "Aceitar");
+					"Accept");
                 return;          
             }
 
@@ -131,9 +131,9 @@
                 this.IsEnabled = true;
 
                 await Application.Current.MainPage.DisplayAlert(
-                    "Erro",
+                    "Error",
 					token.ErrorDescription,
-                    "Aceitar");
+					"Accept");
 				this.Password = string.Empty;
                 return;
             }
