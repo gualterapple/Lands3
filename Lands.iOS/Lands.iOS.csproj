@@ -89,7 +89,6 @@
     <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Implementations\Localize.cs" />
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
     <None Include="Entitlements.plist" />
@@ -147,9 +146,6 @@
     <Reference Include="System.Core" />
     <Reference Include="Xamarin.iOS" />
     <Reference Include="Lands">
-      <HintPath>..\Lands\obj\Debug\netstandard2.0\Lands.dll</HintPath>
-    </Reference>
-    <Reference Include="Lands">
       <HintPath>..\Lands\bin\Debug\netstandard2.0\Lands.dll</HintPath>
     </Reference>
     <Reference Include="Lands">
@@ -201,6 +197,10 @@
       <Project>{3508BAF0-05D2-492F-AF2F-1565373FCF30}</Project>
       <Name>Lands</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Lands\Lands.csproj">
+      <Project>{3508baf0-05d2-492f-af2f-1565373fcf30}</Project>
+      <Name>Lands</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\terra.png" />
@@ -213,5 +213,8 @@
     <BundleResource Include="Resources\ic_launcher_currency.png" />
     <BundleResource Include="Resources\ic_launcher_translation.png" />
     <BundleResource Include="Resources\ic_launcher_border.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Implementations\" />
   </ItemGroup>
 </Project>
