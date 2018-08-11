@@ -146,6 +146,12 @@
     <Reference Include="System.Core" />
     <Reference Include="Xamarin.iOS" />
     <Reference Include="Lands">
+<<<<<<< HEAD
+=======
+      <HintPath>..\Lands\bin\Debug\netstandard2.0\Lands.dll</HintPath>
+    </Reference>
+    <Reference Include="Lands">
+>>>>>>> parent of 77b6816... Antes do Multi Languages
       <HintPath>..\Lands\bin\Debug\netstandard2.0\Lands.dll</HintPath>
     </Reference>
     <Reference Include="Lands">

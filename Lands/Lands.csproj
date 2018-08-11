@@ -29,19 +29,16 @@
     <Compile Remove="Views\LandTabbedPage.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Lands.Android\Lands.Android.csproj" />
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Update="Resources\Resource.Designer.cs">
+    <Compile Update="Resources\Resources.Designer.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
-      <DependentUpon>Resource.resx</DependentUpon>
+      <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Update="Resources\Resource.resx">
+    <EmbeddedResource Update="Resources\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resource.Designer.cs</LastGenOutput>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
 </Project>
