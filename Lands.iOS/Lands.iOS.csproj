@@ -89,6 +89,7 @@
     <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Implementations\Localize.cs" />
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
     <None Include="Entitlements.plist" />
@@ -146,7 +147,7 @@
     <Reference Include="System.Core" />
     <Reference Include="Xamarin.iOS" />
     <Reference Include="Lands">
-      <HintPath>..\Lands\bin\Debug\netstandard2.0\Lands.dll</HintPath>
+      <HintPath>..\Lands\obj\Debug\netstandard2.0\Lands.dll</HintPath>
     </Reference>
     <Reference Include="Lands">
       <HintPath>..\Lands\bin\Debug\netstandard2.0\Lands.dll</HintPath>
