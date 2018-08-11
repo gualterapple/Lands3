@@ -77,7 +77,7 @@
 			if(string.IsNullOrEmpty(this.Email))
 			{
 				await Application.Current.MainPage.DisplayAlert(
-					"Error",
+					"Error1",
 					"Insert an email",
 					"Accept");
 				return;
